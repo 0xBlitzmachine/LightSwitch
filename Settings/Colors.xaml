@@ -1,0 +1,86 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- Slate -->
+    <SolidColorBrush x:Key="Slate">#151718</SolidColorBrush>
+    <SolidColorBrush x:Key="Slate2">#1a1d1e</SolidColorBrush>
+    <SolidColorBrush x:Key="Slate3">#202425</SolidColorBrush>
+    <SolidColorBrush x:Key="Slate4">#26292b</SolidColorBrush>
+    <SolidColorBrush x:Key="Slate5">#2b2f31</SolidColorBrush>
+    <SolidColorBrush x:Key="Slate6">#313538</SolidColorBrush>
+    <SolidColorBrush x:Key="Slate7">#3a3f42</SolidColorBrush>
+    <SolidColorBrush x:Key="Slate8">#4c5155</SolidColorBrush>
+    <SolidColorBrush x:Key="Slate9">#697177</SolidColorBrush>
+    <SolidColorBrush x:Key="Slate10">#787f85</SolidColorBrush>
+    <SolidColorBrush x:Key="Slate11">#9ba1a6</SolidColorBrush>
+    <SolidColorBrush x:Key="Slate12">#ecedee</SolidColorBrush>
+
+    <!-- Blue -->
+    <SolidColorBrush x:Key="Blue">#0f1720</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue2">#0f1b2d</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue3">#10243e</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue4">#102a4c</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue5">#0f3058</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue6">#0d3868</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue7">#0a4481</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue8">#0954a5</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue9">#0091ff</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue10">#369eff</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue11">#52a9ff</SolidColorBrush>
+    <SolidColorBrush x:Key="Blue12">#eaf6ff</SolidColorBrush>
+
+    <!-- Red -->
+    <SolidColorBrush x:Key="Red">#1f1315</SolidColorBrush>
+    <SolidColorBrush x:Key="Red2">#291415</SolidColorBrush>
+    <SolidColorBrush x:Key="Red3">#3c181a</SolidColorBrush>
+    <SolidColorBrush x:Key="Red4">#481a1d</SolidColorBrush>
+    <SolidColorBrush x:Key="Red5">#541b1f</SolidColorBrush>
+    <SolidColorBrush x:Key="Red6">#671e22</SolidColorBrush>
+    <SolidColorBrush x:Key="Red7">#822025</SolidColorBrush>
+    <SolidColorBrush x:Key="Red8">#aa2429</SolidColorBrush>
+    <SolidColorBrush x:Key="Red9">#e5484d</SolidColorBrush>
+    <SolidColorBrush x:Key="Red10">#f2555a</SolidColorBrush>
+    <SolidColorBrush x:Key="Red11">#ff6369</SolidColorBrush>
+    <SolidColorBrush x:Key="Red12">#feecee</SolidColorBrush>
+
+    <!-- Orange -->
+    <SolidColorBrush x:Key="Orange">#1f1206</SolidColorBrush>
+    <SolidColorBrush x:Key="Orange2">#2b1400</SolidColorBrush>
+    <SolidColorBrush x:Key="Orange3">#391a03</SolidColorBrush>
+    <SolidColorBrush x:Key="Orange4">#441f04</SolidColorBrush>
+    <SolidColorBrush x:Key="Orange5">#4f2305</SolidColorBrush>
+    <SolidColorBrush x:Key="Orange6">#5f2a06</SolidColorBrush>
+    <SolidColorBrush x:Key="Orange7">#763205</SolidColorBrush>
+    <SolidColorBrush x:Key="Orange8">#943e00</SolidColorBrush>
+    <SolidColorBrush x:Key="Orange9">#f76808</SolidColorBrush>
+    <SolidColorBrush x:Key="Orange10">#ff802b</SolidColorBrush>
+    <SolidColorBrush x:Key="Orange11">#ff8b3e</SolidColorBrush>
+    <SolidColorBrush x:Key="Orange12">#feeadd</SolidColorBrush>
+
+    <!-- Yellow -->
+    <SolidColorBrush x:Key="Yellow">#1c1500</SolidColorBrush>
+    <SolidColorBrush x:Key="Yellow2">#221a00</SolidColorBrush>
+    <SolidColorBrush x:Key="Yellow3">#2c2100</SolidColorBrush>
+    <SolidColorBrush x:Key="Yellow4">#352800</SolidColorBrush>
+    <SolidColorBrush x:Key="Yellow5">#3e3000</SolidColorBrush>
+    <SolidColorBrush x:Key="Yellow6">#493c00</SolidColorBrush>
+    <SolidColorBrush x:Key="Yellow7">#594a05</SolidColorBrush>
+    <SolidColorBrush x:Key="Yellow8">#705e00</SolidColorBrush>
+    <SolidColorBrush x:Key="Yellow9">#f5d90a</SolidColorBrush>
+    <SolidColorBrush x:Key="Yellow10">#ffef5c</SolidColorBrush>
+    <SolidColorBrush x:Key="Yellow11">#f0c000</SolidColorBrush>
+    <SolidColorBrush x:Key="Yellow12">#fffad1</SolidColorBrush>
+
+    <!-- Green -->
+    <SolidColorBrush x:Key="Green">#0d1912</SolidColorBrush>
+    <SolidColorBrush x:Key="Green2">#0c1f17</SolidColorBrush>
+    <SolidColorBrush x:Key="Green3">#0f291e</SolidColorBrush>
+    <SolidColorBrush x:Key="Green4">#113123</SolidColorBrush>
+    <SolidColorBrush x:Key="Green5">#133929</SolidColorBrush>
+    <SolidColorBrush x:Key="Green6">#164430</SolidColorBrush>
+    <SolidColorBrush x:Key="Green7">#1b543a</SolidColorBrush>
+    <SolidColorBrush x:Key="Green8">#236e4a</SolidColorBrush>
+    <SolidColorBrush x:Key="Green9">#30a46c</SolidColorBrush>
+    <SolidColorBrush x:Key="Green10">#3cb179</SolidColorBrush>
+    <SolidColorBrush x:Key="Green11">#4cc38a</SolidColorBrush>
+    <SolidColorBrush x:Key="Green12">#e5fbeb</SolidColorBrush>
+</ResourceDictionary>
