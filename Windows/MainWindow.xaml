@@ -4,49 +4,57 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LightSwitch"
-
-        xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
         mc:Ignorable="d"
 
-        Title="293uFOIJ0932r4JRFQWf9djdjW" Height="300" Width="200"
-        WindowStyle="None"
+        Title="293uFOIJ0932r4JRFQWf9djdjW"
+        Height="auto"
+        Width="200"
         WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
         ResizeMode="NoResize"
         Background="{StaticResource Slate4}"
         BorderBrush="{StaticResource Slate8}"
         BorderThickness="1">
 
-    <Grid HorizontalAlignment="Stretch"
-          VerticalAlignment="Top"
-          Background="{StaticResource Slate6}"
-          Height="30"
-          MouseDown="Grid_MouseDown">
+    <Grid>
 
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="30" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
-        <TextBlock VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   Text="LightSwitch"
-                   FontWeight="UltraLight"
-                   FontSize="20"
-                   Foreground="{StaticResource Slate11}"/>
+        <!-- Header -->
+        <Grid Grid.Row="0"
+              Background="{StaticResource Slate6}"
+              MouseDown="Grid_MouseDown">
+
+            <TextBlock VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Text="LightSwitch"
+                       FontWeight="UltraLight"
+                       FontSize="20"
+                       Foreground="{StaticResource Slate11}"/>
 
 
-        <Button x:Name="ExitButton"
-            Width="20"
-                HorizontalAlignment="Right"
-                Style="{StaticResource ExitButtonStyle}"
-                Click="ExitButton_Click">
+            <Button x:Name="ExitButton"
+                    Width="25"
+                    HorizontalAlignment="Right"
+                    Style="{StaticResource ExitButtonStyle}"
+                    Click="ExitButton_Click">
 
-            <TextBlock
-                Text="X"
-                FontWeight="UltraLight"
-                FontSize="12"
-                Foreground="{StaticResource Red11}"/>
-        </Button>
+                <TextBlock Text="X"
+                           FontWeight="UltraLight"
+                           FontSize="12"
+                           Foreground="{StaticResource Red11}"/>
+            </Button>
+        </Grid>
+
+        <!-- Body -->
+        <Grid Grid.Row="1"
+              Margin="10, 10, 10, 10">
+            <GroupBox Header="GroupBox" >
+                <TextBlock Text="Content"/>
+            </GroupBox>
+        </Grid>
     </Grid>
-
-
 </Window>
