@@ -11,12 +11,12 @@
                              Title="293uFOIJ0932r4JRFQWf9djdjW"
                              Height="300"
                              Width="300"
+                             WindowStyle="None"
                              WindowStartupLocation="CenterScreen"
 
                              Background="{StaticResource Slate}"
-                             TitleBarBackground="{DynamicResource {x:Static adonisUi:Brushes.AccentBrush}}"
-                             BorderBrush="{DynamicResource {x:Static adonisUi:Brushes.AccentBrush}}"
-                             BorderThickness="3">
+                             BorderBrush="{StaticResource Slate2}"
+                             BorderThickness="1">
 
     <StackPanel>
         <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Hii</TextBlock>
