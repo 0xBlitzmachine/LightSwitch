@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LightSwitch"
+        xmlns:userControls="clr-namespace:LightSwitch.UserControls"
         mc:Ignorable="d"
 
         Title="293uFOIJ0932r4JRFQWf9djdjW"
@@ -51,6 +52,20 @@
 
         <!-- Body Grid -->
         <Grid Grid.Row="1">
+
+            <TabControl>
+
+
+
+                <TabItem Header="Easy Mode"
+                         HorizontalAlignment="Center">
+                    <userControls:EasyMode />
+                </TabItem>
+                <TabItem Header="Adv. Mode"
+                         HorizontalAlignment="Center">
+                    <userControls:AdvancedMode />
+                </TabItem>
+            </TabControl>
         </Grid>
     </Grid>
 
