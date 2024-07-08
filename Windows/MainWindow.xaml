@@ -57,12 +57,10 @@
 
 
 
-                <TabItem Header="Easy Mode"
-                         HorizontalAlignment="Center">
+                <TabItem Header="Easy Mode">
                     <userControls:EasyMode />
                 </TabItem>
-                <TabItem Header="Adv. Mode"
-                         HorizontalAlignment="Center">
+                <TabItem Header="Adv. Mode">
                     <userControls:AdvancedMode />
                 </TabItem>
             </TabControl>

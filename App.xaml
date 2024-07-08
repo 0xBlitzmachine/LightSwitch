@@ -9,7 +9,8 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/Colors.xaml" />
                 <ResourceDictionary Source="Styles/ControlButtonStyle.xaml" />
-                <ResourceDictionary Source="Styles/TabControlStyle.xaml" />
+                <ResourceDictionary Source="Styles/TabPanelStyle.xaml" />
+                <ResourceDictionary Source="Styles/TabItemStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
