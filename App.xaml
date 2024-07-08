@@ -8,7 +8,12 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/Colors.xaml" />
+
+                <!-- Header -->
                 <ResourceDictionary Source="Styles/ControlButtonStyle.xaml" />
+
+                <!-- Complete Custom Style for TabControl -->
+                <ResourceDictionary Source="Styles/TabControlStyle.xaml" />
                 <ResourceDictionary Source="Styles/TabPanelStyle.xaml" />
                 <ResourceDictionary Source="Styles/TabItemStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
