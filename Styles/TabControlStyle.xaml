@@ -5,7 +5,6 @@
     <Style TargetType="{x:Type TabControl}">
         <Setter Property="Foreground" Value="{StaticResource Slate12}" />
 
-
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type TabControl}">

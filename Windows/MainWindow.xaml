@@ -47,7 +47,10 @@
                     Grid.Column="1"
                     FontSize="12"
                     Content="&#x2716;"
-                    Click="ExitButton_Click" />
+                    Click="ExitButton_Click"
+                    Height="20"
+                    Width="20"
+                    Style="{StaticResource ControlButtonStyle}" />
         </Grid>
 
         <!-- Body Grid -->

@@ -16,6 +16,10 @@
                 <ResourceDictionary Source="Styles/TabControlStyle.xaml" />
                 <ResourceDictionary Source="Styles/TabPanelStyle.xaml" />
                 <ResourceDictionary Source="Styles/TabItemStyle.xaml" />
+
+                <!-- Other style components -->
+                <ResourceDictionary Source="Styles/ButtonStyle.xaml" />
+                <ResourceDictionary Source="Styles/TextBoxStyle.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
