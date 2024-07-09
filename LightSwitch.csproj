@@ -178,5 +178,8 @@
   <ItemGroup>
     <Resource Include="BlitzLogo-BlitzBlue.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\alpha-client.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

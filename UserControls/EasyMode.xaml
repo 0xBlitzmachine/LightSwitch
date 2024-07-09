@@ -5,8 +5,27 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:LightSwitch.UserControls"
              mc:Ignorable="d"
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <TextBlock Text="Easy Mode Page" />
-    </Grid>
+             d:DesignHeight="200" d:DesignWidth="300">
+
+    <!-- Re-use maybe in Adv. Mode? -->
+    <StackPanel HorizontalAlignment="Center">
+        <!-- ## HotKey Setting ## -->
+        <StackPanel Orientation="Horizontal">
+            <TextBlock
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Height="20"
+                Margin="5"
+                Padding="0, 1.5, 0, 0">HotKey</TextBlock>
+            <TextBox HorizontalContentAlignment="Center"
+                     VerticalContentAlignment="Center"
+                     Height="20"
+                     Width="50"
+                     Margin="5"
+                     Text="/"
+                     MaxLength="1" />
+            <Button Margin="5">Set Hotkey</Button>
+        </StackPanel>
+        <!-- ################################### -->
+    </StackPanel>
 </UserControl>
