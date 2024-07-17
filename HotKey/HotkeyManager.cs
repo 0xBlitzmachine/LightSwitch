@@ -11,7 +11,6 @@ using System.Windows.Interop;
 
 namespace LightSwitch.HotKey
 {
-
     /* TODO */
     /*
      * - Pass functions trough constructor to pass it trough WndProc
@@ -19,39 +18,44 @@ namespace LightSwitch.HotKey
      */
     public class HotkeyManager : IDisposable
     {
-        enum KeyModifier
-        {
-            None = 0,
-            Alt = 1,
-            Control = 2,
-            Shift = 4,
-            WinKey = 8
-        }
-
-        // Import native functions from the win32 library
         [DllImport("user32.dll")]
         private static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vk);
         [DllImport("user32.dll")]
         private static extern bool UnregisterHotKey(IntPtr hWnd, int id);
+        // Import native functions from the win32 library
 
         // Private Properties
         private readonly Window _window;
         private HwndSource _hwndSource;
+        private Action _hotkeyAction;
+        private Key _currentHotkey = Key.T;
         private int _hotKeyId = 0;
 
         // Public Properties
-        public bool isHotkeySet = false;
+        public Key CurrentHotkey {  
+            get { return _currentHotkey; }
+            set {
+                _currentHotkey = value;
+                if (!this.RegisterHotKey())
+                {
+                    UnregisterHotKey();
+                    RegisterHotKey();
+                }
+                else RegisterHotKey();
+            }
+        }
 
         // Initialize window and its events to handle the hotkey
-        public HotkeyManager(Window window)
+        public HotkeyManager(Window window, Action hotkeyAction)
         {
             _window = window;
+            _hotkeyAction = hotkeyAction;
 
             _window.SourceInitialized += _window_SourceInitialized;
             _window.Closed += _window_Closed;
         }
 
-        public bool RegisterHotKey() => RegisterHotKey(_hwndSource.Handle, _hotKeyId, 0x0001, 0x20);
+        public bool RegisterHotKey() => RegisterHotKey(_hwndSource.Handle, _hotKeyId, 0x0000, KeyInterop.VirtualKeyFromKey(_currentHotkey));
         public bool UnregisterHotKey() => UnregisterHotKey(_hwndSource.Handle, _hotKeyId);
 
 
@@ -73,10 +77,9 @@ namespace LightSwitch.HotKey
             const int WM_HOTKEY = 0x0312;
             if (msg == WM_HOTKEY && wParam.ToInt32() == _hotKeyId)
             {
-                MessageBox.Show("Bla");
+                _hotkeyAction();
                 handled = true;
             }
-
             return IntPtr.Zero;
         }
 

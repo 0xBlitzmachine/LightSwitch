@@ -12,18 +12,13 @@ namespace LightSwitch.Windows
         private HotkeyManager _hotkeyManager;
         public MainWindow()
         {
-            _hotkeyManager = new HotkeyManager(this);
+            _hotkeyManager = new HotkeyManager(this, () => { MessageBox.Show("Test!"); });
             this.InitializeComponent();
 
         }
 
         // Header
-        private void ExitButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Do cleanup later -- Logic for rebinding and move it into UserControl
-            if (_hotkeyManager.RegisterHotKey()) MessageBox.Show("Success");
-            else MessageBox.Show("Failed");
-        }
+        private void ExitButton_Click(object sender, RoutedEventArgs e) => _hotkeyManager.RegisterHotKey();
         private void HeaderGrid_MouseDown(object sender, MouseButtonEventArgs e) => this.DragMove();
 
         // Body
