@@ -68,6 +68,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Messaging" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -190,6 +191,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\alpha-client.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empty_Keystroke_Small.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

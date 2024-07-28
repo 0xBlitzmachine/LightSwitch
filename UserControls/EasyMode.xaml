@@ -18,14 +18,18 @@
                 Margin="5"
                 Padding="0, 1.5, 0, 0">HotKey</TextBlock>
             <!-- Create Custom Template -->
-            <TextBox HorizontalContentAlignment="Center"
+            <TextBox x:Name="HotkeyTextBox"
+                     HorizontalContentAlignment="Center"
                      VerticalContentAlignment="Center"
                      Height="20"
                      Width="50"
                      Margin="5"
                      Text="/"
                      MaxLength="1" />
-            <Button Margin="5">Set Hotkey</Button>
+
+            <Button x:Name="SetHotkeyButton"
+                    Margin="5"
+                    Click="SetHotkeyButton_Click">Set Hotkey</Button>
         </StackPanel>
         <!-- ################################### -->
     </StackPanel>

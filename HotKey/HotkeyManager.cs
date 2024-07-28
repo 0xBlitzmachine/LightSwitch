@@ -18,15 +18,16 @@ namespace LightSwitch.HotKey
      */
     public class HotkeyManager : IDisposable
     {
+        // Import native functions from the win32 library
         [DllImport("user32.dll")]
         private static extern bool RegisterHotKey(IntPtr hWnd, int id, int fsModifiers, int vk);
         [DllImport("user32.dll")]
         private static extern bool UnregisterHotKey(IntPtr hWnd, int id);
-        // Import native functions from the win32 library
 
         // Private Properties
         private readonly Window _window;
         private HwndSource _hwndSource;
+
         private Action _hotkeyAction;
         private Key _currentHotkey = Key.T;
         private int _hotKeyId = 0;
@@ -64,9 +65,13 @@ namespace LightSwitch.HotKey
 
         private void _window_SourceInitialized(object sender, EventArgs e)
         {
-            var handle = new WindowInteropHelper(_window).Handle;
-            _hwndSource = HwndSource.FromHwnd(handle);
-            _hwndSource.AddHook(WndProc);
+            try
+            {
+              var handle = new WindowInteropHelper(_window).Handle;
+              _hwndSource = HwndSource.FromHwnd(handle);
+              _hwndSource.AddHook(WndProc);
+            }
+            catch(Exception ex) { Console.WriteLine($"HotkeyManager - OnWindowSourceInitiliazed: {ex.Message}"); }
         }
 
         // Handle incoming messages to the window
